@@ -1,0 +1,207 @@
+/* font-family: 'Darker Grotesque', sans-serif;
+font-family: 'Hepta Slab', serif;
+font-family: 'Newsreader', serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Saira', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Orbitron', sans-serif; */
+    /* color: rgb(15, 12, 12); */
+}
+
+body{
+      height: 100vh; 
+      max-height: 200vh;
+      background: linear-gradient(#000000 50%,#ffb92a 50%);
+    
+}
+.logo{
+    padding: 1rem 0;
+    margin-left: 2em;
+}
+
+.logo p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.logo p span{
+    color: #d4aa11;
+}
+
+
+.container{
+    font-size: 2rem;
+    width : 60vw;
+    max-width: 20.5em;
+    padding: 1rem 1rem;
+    background-color: #201f28;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 1.2rem 2rem 3rem rgba(0,0,0,0.2);
+   
+
+}
+.flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.search-container {
+    display: grid;
+    grid-template-columns: 12fr 4fr;
+    gap: 1.2rem;
+
+}
+.search-container input,.search-container button{
+     font-size: 0.9rem;
+     outline: none;
+     border-radius: 0.3rem;
+}
+.search-container input{
+    background-color: transparent;
+    border: 2px solid #a0a0a0;
+    padding: 0.7rem;
+    color: #ffffff;
+}
+.search-container:focus{
+    border-color: #ffffff;
+}
+.search-container button{
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+/* result box */
+
+#result{
+    color: #ffffff;
+    font-size: 16px;
+   
+}
+.info{
+    font-family: 'Poppins', sans-serif;
+    
+     display: flex;
+     align-items: center;
+    
+
+}
+.title-name{
+    margin-left: 5em;
+}
+.poster{
+    width: 30%;
+    margin-top: 1em;
+   
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.rating{
+    display: flex;
+    align-items: centre;
+    justify-content: center;
+    margin-top: 1.3em;
+    
+}
+.rating img{
+    width: 18px;
+    margin-right: 0.5em;
+}
+.details{
+     margin-top: 1.7em;
+     text-align: center;
+}
+span{
+    margin-right: 0.5em;
+    color: #83818e;
+    border: 2px solid rgb(147, 144, 144);
+    border-radius: 4px;
+    padding: 0.3em;
+}
+.genre{
+     margin-top: 0.7em;
+     text-align: center;
+}
+p{
+    color: #83818e;
+}
+
+
+
+/* plot */
+h3{
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+@media  screen and (max-width: 714px) {
+    .logo{
+        padding: 1rem 0;
+        margin-left: 2em;
+        margin-bottom: 15px;
+    }
+    
+    .logo p{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: bold;
+    }
+     .container{
+        margin-top: 1em;
+         width: 90%;
+        
+     }
+      .info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7em;
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+       
+      }
+      .poster{
+        margin-left: 2em;
+      }
+      .tile-name{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+        
+      }
+      .title-name h2{
+        margin-top: 1em;
+          margin-right: 2em;
+      }
+      .rating{
+        margin-right: 2em;
+      }
+      .rating h4{
+        font-size: 2em;
+      }
+      .details{
+        margin-top: 2em;
+        margin-right: 2em;
+      }
+      .genre{
+        margin-top: 2em;
+        margin-right: 2em;
+      }
+}
+   
+
